@@ -20,8 +20,9 @@ img=frame
 img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
 def draw_circle(event,x,y,flags,param):
+    
+    #Double click to find the HSV value of the pixel pointed to.
     if event == cv2.EVENT_LBUTTONDBLCLK:
-        #cv2.circle(img,(x,y),100,(255,0,0),-1)
         print img.item(x,y,0)
         print img.item(x,y,1)
         print img.item(x,y,2)
